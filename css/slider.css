@@ -1,0 +1,124 @@
+/**
+ * 
+ */
+.slider{
+    width: 83%;
+    float: right;
+    margin-right: 60px;
+}
+.nativeMultiple {
+    position: relative;
+    background: #e5e5e5;
+    height: 3px;
+    margin-top: 11px;
+    margin-right: 0;
+}
+
+.nativeMultiple > div {
+    height: 9px;
+}
+
+.nativeMultiple > div:last-child > div {
+    right: 0;
+}
+
+.nativeMultiple input[type=range] {
+    margin:0;
+    padding:0;
+    width: 100%;
+    height:  9px;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+.nativeMultiple > div.nativeMultiple-one {
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    min-width: 60px;
+    top: -12px
+}
+
+.nativeMultiple > div.nativeMultiple-two {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    top: -12px;
+}
+
+.nativeMultiple input[type=range]:focus {
+  outline: none;
+}
+
+.nativeMultiple > div, .nativeMultiple > div > div {
+    height: 18px;
+}
+.nativeMultiple input[type=range]::-webkit-slider-thumb {
+    border: 0;
+    height: 9px;
+    width: 3px;
+    background: #f14a58;
+    cursor: pointer;
+    z-index: 20;
+    -webkit-appearance: none;
+    position: relative;
+}
+
+/**
+ * moz
+ */
+.nativeMultiple input[type=range]::-moz-range-thumb {
+    border: 0;
+    height: 9px;
+    width: 3px;
+    background: #f14a58;
+    cursor: pointer;
+    z-index: 20;
+    position: absolute;
+    top: 20px;
+    border-radius: 0;
+}
+
+.nativeMultiple input[type=range]::-moz-range-track {
+    background: none;
+    border: none;
+}
+
+
+
+/**
+ * ms
+ */
+.nativeMultiple input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.nativeMultiple input[type=range]::-ms-fill-lower {
+    background: transparent;
+}
+
+.nativeMultiple input[type=range]::-ms-thumb {
+    border: 0;
+    height: 9px;
+    width: 3px;
+    background: #347EB7;
+    cursor: pointer;
+    z-index: 20;
+    position: absolute;
+    top: 20px;
+    border-radius: 0;
+}
+.min{
+    margin-left: 17%;
+}
+.min, .max{
+    display: inline-block;
+    font-family: HelveticaNeueBold;
+    font-size: 12px;
+}
+.max{
+    float: right;
+    margin-top: 8px;
+}

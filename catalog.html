@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/nativemultiple.jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="start.html"><h1>Template</h1></a>
+        <a href="start.html"><h1>TL</h1></a>
+        <div class="login_bag">
+            <a href="#">E-mail sign up</a>
+            <a href="bag.html">
+                <img src="img/bag.png" alt="">
+                Bag <span id="tot_price"></span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><img id="menu_ico" src="img/menu.png" alt=""><img id="menu_close" src="img/menu_close.png" alt="">
+                    <ul id="drop">
+                        <li><a href="#">Woman</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Handbags</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Clearance</a></li>
+                        <li id="last_menu_item"><a href="#">Store Locator</a></li>
+                        <li><form action="">
+                            <input id="search" type="text" placeholder="Style Name">
+                            <button type="submit"><img src="img/search.png" alt=""></button>
+                        </form></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <form action="" id= "search_form">
+            <input id="search" type="text" placeholder="Style Name">
+            <button type="submit"><img src="img/search.png" alt=""></button>
+        </form>
+        <div id="tab_button"><img src="img/search.png" alt=""></div>
+    </header>
+    <section class="filter">
+        <ul>
+            <li>
+                <div class="filter_cont">
+                    <span id="Fashion">Fashion</span>, 
+                    <span id="Product type">Product type</span>, 
+                    <span id="Color">Color</span>, 
+                    <span id="Brand">Brand</span>, 
+                    <span id="Size">Size</span>, 
+                    <span id="Price range">Price range</span>
+                </div>
+                <img src="img/drop_mob.png" alt="">
+                <ul>
+                    <li><p class="drag">Drag and select</p></li>
+                    <li class="drop">
+                    <p>Fashion</p>
+                        <div></div>
+                        <ul>
+                            <li class="options"><p>Not selected</p></li>
+                            <li class="options"><p>Casual style</p></li>
+                            <li class="options"><p>New Look</p></li>
+                            <li class="options"><p>Sport</p></li>
+                            <li class="options"><p>Vintage</p></li>
+                            <li class="options"><p>Classics</p></li>
+                        </ul>
+                    </li> 
+                
+                    <li class="drop">
+                        <p>Product type</p>
+                        <div></div>
+                        <ul>
+                            <li class="options"><p>Not selected</p></li>
+                            <li class="options"><p>Coats & Jackets</p></li>
+                            <li class="options"><p>Dresses</p></li>
+                            <li class="options"><p>Jersey</p></li>
+                        </ul>
+                    </li>
+                
+                    <li class="drop">
+                        <p>Color</p>
+                        <div></div>
+                        <ul>
+                            <li class="options"><p>Not selected</p></li>
+                            <li class="options"><p>Black</p></li>
+                            <li class="options"><p>Blue</p></li>
+                            <li class="options"><p>Red</p></li>
+                            <li class="options"><p>Green</p></li>
+                            <li class="options"><p>Golden</p></li>
+                            <li class="options"><p>Yellow</p></li>
+                        </ul>
+                    </li>
+                
+                    <li class="drop">
+                        <p>Brand</p>
+                        <div></div>
+                        <ul>
+                            <li class="options"><p>Not selected</p></li>
+                            <li class="options"><p>Antipodium</p></li>
+                            <li class="options"><p>Adidas</p></li>
+                            <li class="options"><p>New Balance</p></li>
+                            <li class="options"><p>River Island</p></li>
+                        </ul>
+                    </li>
+                
+                    <li class="drop">
+                        <p>Size</p>
+                        <div></div>
+                        <ul>
+                            <li class="options"><p>Not selected</p></li>
+                            <li class="options"><p>UK 18</p></li>
+                            <li class="options"><p>UK 18L</p></li>
+                            <li class="options"><p>UK 20</p></li>
+                            <li class="options"><p>UK 20L</p></li>
+                            <li class="options"><p>UK 20S</p></li>
+                            <li class="options"><p>UK 22</p></li>
+                        </ul>
+                    </li>
+                
+                    <li class="drop">
+                    <p>Price range</p>
+                    <div></div>
+                        <ul>
+                            <li class="options"><p>Not selected</p></li>
+                            <li class="options"><p>To £99</p></li>
+                            <li class="options"><p>£100-299</p></li>
+                            <li id="price_range"><div class="slider">
+                                    <div class="min"></div>
+                                    <div class="max"></div>
+                                        <input type="range" step="0.01" min="0" max="1000" value="12,650" />
+                                    </div>
+                            <li class="options"><p>From £300</p></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>  
+    </section>
+        <section class="main">
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_1.png" alt="">
+                    </div>
+                    <figcaption>
+                        Only Skinny Jeans
+                    </figcaption>
+                    <figcaption>
+                        £65.50
+                    </figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_2.png" alt="">
+                    </div>
+                    <figcaption>
+                        Neck Knitted Jumper
+                    </figcaption>
+                    <figcaption>
+                        £76.25
+                    </figcaption>
+                </a>
+            </figure>
+            <div class="cat_banner mob">
+                <p>Last weekend <span>extra 50%</span> off on all reduced boots and shoulder bags</p>
+                <p>This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</p>
+            </div> 
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_3.png" alt="">
+                    </div>
+                    <figcaption>
+                        Turtle Neck Jumper in Rib
+                    </figcaption>
+                    <figcaption>
+                        £130.25 <span>New</span>
+                    </figcaption>
+                </a>
+            </figure>
+            <div class="cat_banner tab">
+                <p>Last weekend <span>extra 50%</span>  off on all reduced boots and shoulder bags</p>
+                <p>This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</p>
+            </div>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_4.png" alt="">
+                    </div>
+                    <figcaption>
+                        With Patchwork Crochet
+                    </figcaption>
+                    <figcaption>
+                        £80.60
+                    </figcaption>
+                </a>
+            </figure>
+            <div class="cat_banner desc">
+                <p>Last weekend <span>extra 50%</span>  off on all reduced boots and shoulder bags</p>
+                <p>This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</p>
+            </div>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <div class="levis">
+                            <p>Levi's</p>
+                            <p>Buyer's choice</p>
+                        </div>
+                        <img src="img/cat_5.png" alt="">
+                    </div>
+                    <figcaption>
+                        Levi’s Jeans for women
+                    </figcaption>
+                    <figcaption>
+                        <span>More colors</span>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_6.png" alt="">
+                    </div>
+                    <figcaption>
+                        Boyfriend T-Shirt with Bohemian Print
+                    </figcaption>
+                    <figcaption>
+                        <span class="ex_prrice">£120.00 </span><span>-25% </span>£90.00
+                    </figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_7.png" alt="">
+                    </div>
+                    <figcaption>
+                        Colour Block
+                    </figcaption>
+                    <figcaption>
+                        £550.50
+                    </figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_8.png" alt="">
+                    </div>
+                    <figcaption>
+                        Monki Festval Knitted
+                    </figcaption>
+                    <figcaption>
+                        £24.75
+                    </figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_9.png" alt="">
+                    </div>
+                    <figcaption>
+                        Oversized Cardigan
+                    </figcaption>
+                    <figcaption>
+                        £90.00
+                    </figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_10.png" alt="">
+                    </div>
+                    <figcaption>
+                        Paul & Joe Sister Jumper with Neon Trims
+                    </figcaption>
+                    <figcaption>
+                        £19.75 <span>New</span>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_11.png" alt="">
+                    </div>
+                    <figcaption>
+                        Only Busted Knee Jean
+                    </figcaption>
+                    <figcaption>
+                        £140.50
+                    </figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="item_1.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_12.png" alt="">
+                    </div>
+                    <figcaption>
+                        Boyfriend T-Shirt with Bohemian Print
+                    </figcaption>
+                    <figcaption>
+                        £85.75
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="hide_fig">
+                <a href="item_2.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_9.png" alt="">
+                    </div>
+                    <figcaption>
+                        Oversized Cardigan
+                    </figcaption>
+                    <figcaption>
+                        £90.00
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="hide_fig">
+                <a href="item_2.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_10.png" alt="">
+                    </div>
+                    <figcaption>
+                        Paul & Joe Sister Jumper with Neon Trims
+                    </figcaption>
+                    <figcaption>
+                        £19.75 <span>New</span>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="hide_fig">
+                <a href="item_2.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_11.png" alt="">
+                    </div>
+                    <figcaption>
+                        Only Busted Knee Jean
+                    </figcaption>
+                    <figcaption>
+                        £140.50
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="hide_fig">
+                <a href="item_2.html">
+                    <div class="cat_img">
+                        <div class="hover">
+                            <p>Quick view</p>
+                            <p>More photos</p>
+                        </div>
+                        <img src="img/cat_12.png" alt="">
+                    </div>
+                    <figcaption>
+                        Boyfriend T-Shirt with Bohemian Print
+                    </figcaption>
+                    <figcaption>
+                        £85.75
+                    </figcaption>
+                </a>
+            </figure>
+            <button id="show">Show more</button>                     
+        </section>
+        <section class="banner">
+        <div class="ban">
+            <a href="#">
+                <img src="img/adidas_cat.png" alt="">
+                <img src="img/adidas_tab.png" alt="">
+                <img src="img/adidas_mob.png" alt="">
+                <div class="banner_text">
+                    <h4>Adidas Blue</h4>
+                    <p>For man</p>
+                </div>
+            </a>
+        </div>
+        <div class="ban_2">
+            <a href="#">
+                <img src="img/jeans.png" alt="">
+                <img src="img/jeans_tab.png" alt="">
+                <div class="banner_text">
+                    <h4>Repair Patches</h4>
+                    <p>£ 150.50</p>
+                </div>
+            </a> 
+        </div>
+        <div class="ban_2">
+            <a href="#">
+                <img src="img/bag_desc.png" alt="">
+                <div class="banner_text">
+                    <h4>Sale</h4>
+                    <p>-70%</p>
+                </div>
+            </a> 
+        </div>
+    </section>
+    <footer class="footer">
+        <table>
+            <tr>
+                <td>
+                    <nav>
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Store locator</a></li>
+                            <li><a href="#">Gift cards</a></li>
+                            <li><a href="#">Size guide</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <h3>Customer Care</h3>
+                        <ul>
+                            <li><a href="#">Customer service</a></li>
+                            <li><a href="#">Track my order</a></li>
+                            <li><a href="#">Return policy</a></li>
+                            <li><a href="#">Shipping & delivery</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </nav>
+                </td>
+                <td>
+                    <address>
+                        <h3>Questions</h3>
+                        <ul>
+                            <li>Tweet us <a href="#">@template</a></li>
+                        </ul>
+                    </address>
+                    <address>
+                        <h3>Order by phone</h3>
+                        <ul>
+                            <li>8-800-409-47-12</li>
+                        </ul>
+                    </address>
+                    <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+                    <a href="#"><img src="img/fb.png" alt=""></a>
+                    <a href="#"><img src="img/tweeter.png" alt=""></a>
+                </td>
+            </tr>
+        </table>
+        <div class="address_mob">
+            <address>
+                <h3>Questions</h3>
+                <ul>
+                    <li>Tweet us <a href="#">@template</a></li>
+                </ul>
+            </address>
+            <address>
+                <h3>Order by phone</h3>
+                <ul>
+                    <li>8-800-409-47-12</li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+    <footer class="foot">
+        <nav>
+            <ul>
+                <li><a href="#">Legal notice</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="">Site map</a></li>
+            </ul>
+            <a href="#"><img src="img/tweeter.png" alt=""></a>
+            <a href="#"><img src="img/fb.png" alt=""></a>
+        </nav>
+        
+        <p>© 2010–2015, The Template Group inc.</p>
+        <p>Share   <span>1 437</span></p>
+    </footer>
+    <script src = "js/main.js"></script>
+    <script src = "js/catalog.js"></script>
+</body>
+</html>

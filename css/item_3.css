@@ -1,0 +1,11 @@
+html, body{
+    min-height: 100%;
+}
+.foot_1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.foot{
+    position: relative;
+}
